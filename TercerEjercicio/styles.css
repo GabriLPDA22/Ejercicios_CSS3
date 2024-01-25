@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.card-header {
+    background-image: url('https://source.unsplash.com/pJ_DCj9KswI/1080x360');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100px;
+}
+
+.Foto_perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 60px 20px 20px; /* Adjusted top padding */
+    text-align: center;
+}
+
+.card-title {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    margin-top: 5%;
+}
+
+.card-subtitle {
+    font-size: 10px;
+    color: #555;
+    
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.card-footer a {
+    color: #615555; 
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block; /* Asegura que los márgenes se apliquen correctamente */
+}
+
+/* Para asegurarnos de que los SVG generen el color de los enlaces */
+.card-footer a svg {
+    fill: currentColor; /* Esto hará que el color del SVG sea el mismo que el de su elemento padre <a> */
+}
+
+
+
