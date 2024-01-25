@@ -1,0 +1,25 @@
+
+.card {
+    max-width: 25%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+.card img {
+    width: 100%;
+    display: block; 
+}
+.card-content {
+    padding: 16px;
+    background-color: #fff;
+}
+.card-content h4 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+.card-content p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 16px;
+}
