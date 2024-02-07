@@ -75,7 +75,7 @@ body {
 
 /* Para asegurarnos de que los SVG generen el color de los enlaces */
 .card-footer a svg {
-    fill: currentColor; /* Esto hará que el color del SVG sea el mismo que el de su elemento padre <a> */
+    fill: currentColor; /* Esto hará que el color del SVG sea el mismo que el padre <a> */
 }
 
 
