@@ -1,0 +1,39 @@
+/* Estilos base para la barra de navegación */
+.navbar-container {
+    background-color: #ffffff; /* Fondo blanco para la barra de navegación */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos de la barra de navegación */
+  }
+  
+  /* Estilos para la marca o logo */
+  .navbar-brand {
+    flex-grow: 1;
+  }
+  
+  /* Estilos para los enlaces de la barra de navegación */
+  .navbar-item, .button {
+    text-decoration: none;
+    margin-right: 10px; /* Espaciado a la derecha de cada enlace */
+    color: #4A4A4A; /* Color del texto para los enlaces */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente para los enlaces */
+    font-weight: bold; /* Negrita para el texto de los enlaces */
+  }
+  
+  /* Estilos para los botones 'Sponsor' y 'Download' */
+  .button {
+    padding: 5px 15px; /* Espaciado interno para los botones */
+    border-radius: 4px; /* Bordes redondeados para los botones */
+    color: white; /* Texto blanco para los botones */
+    font-size: 0.8em; /* Tamaño de la fuente reducido para los botones */
+  }
+  
+  .sponsor {
+    background-color: #00d1b2; /* Color de fondo para el botón 'Sponsor' */
+  }
+  
+  .download {
+    background-color: #ff3860; /* Color de fondo para el botón 'Download' */
+  }
+  
