@@ -10,12 +10,6 @@ Los ejercicios abarcan diferentes aspectos relacionados con el uso de CSS para e
 
 Cada ejercicio se encuentra en su propio archivo HTML, el cual contiene una estructura básica de página web con elementos HTML. Tu tarea es agregar estilos CSS al archivo utilizando la etiqueta `<style>` en la sección `<head>` del documento, o enlazando un archivo CSS externo con la etiqueta `<link>`.
 
-## Contenido del Ejercicio CSS
-
-Aquí está el contenido del ejercicio CSS:
-
-```markdown
-![Ejrcicios](/01-Introduccion/Word/README.md)
 
 ## Contribuciones 🤝
 
