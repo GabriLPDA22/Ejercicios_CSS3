@@ -23,6 +23,7 @@ El repositorio está organizado en carpetas que representan diferentes temas o c
 - `05-responsive-design`: Ejercicios para practicar el diseño responsivo y la adaptación de sitios web a diferentes dispositivos.
 
 Cada carpeta contiene un archivo `README.md` con una descripción detallada de los ejercicios y posiblemente alguna guía sobre cómo abordarlos.
+### NOTA: Por ahora solo introduccion 
 
 ## Contribuciones 🤝
 
