@@ -29,6 +29,7 @@ Las transformaciones permiten modificar la apariencia de los elementos, aplicand
 ``` 
 
 Este estilo aumentará el tamaño del elemento en un 10% al pasar el cursor.
+NOTA: Hay mas estilos aplicados pero es la visualizacion de como seria 
 
 ![Animación de cambio de color](./GIF/TransformacinconHover.gif)
 
