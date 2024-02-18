@@ -1,6 +1,11 @@
 # Animaciones en CSS
 
-Las animaciones añaden interactividad y dinamismo a las páginas web, mejorando la experiencia del usuario.
+Las animaciones pueden hacer que una interfaz de usuario sea más interesante y mejoran la experiencia de usuario al proporcionar retroalimentación visual, guiar tareas y llamar la atención sobre ciertas áreas.
+
+## Propiedades Clave
+- **Transitions:** Permite cambiar los valores de las propiedades CSS a lo largo del tiempo.
+- **Animations:** Brinda control total sobre los pasos de la animación, su duración, repetición y más.
+
 
 ## Ejemplo de Animación Simple
 Una animación que cambia el color de fondo de un elemento cuando el usuario pasa el cursor sobre él.
@@ -20,6 +25,36 @@ Al pasar el cursor sobre .elemento-animado, el fondo cambiará entre blanco y az
 
 ![Animación de cambio de color](./GIF/PrevisualizacindeAnimacionCSS.gif)
 
+
+## Ejemplo de Transición
+```css
+.button {
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #3498db;
+}
+```
+Al pasar el cursor sobre .button, su color de fondo cambiará suavemente a azul.
+
+![Boton](./GIF/BotnconEstilodeTransicion.gif)
+
+
+## Ejemplo de Animación Keyframes
+
+```css
+.loading {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+```
+
+Un elemento con la clase .loading rotará continuamente para indicar un proceso de carga.
+
+![Carga](./GIF/AnimacindeCarga.gif)
 
 ## Consejos Adicionales
 

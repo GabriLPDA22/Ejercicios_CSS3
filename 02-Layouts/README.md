@@ -1,9 +1,14 @@
 # Layouts en CSS
 
-Los layouts en CSS son fundamentales para estructurar el contenido de las páginas web de manera lógica y atractiva.
+El diseño de layouts es una habilidad fundamental en CSS que implica estructurar y organizar visualmente el contenido de una página web.
 
-## Ejemplo de Uso de Flexbox
-Flexbox es una herramienta poderosa para crear diseños flexibles y responsivos.
+## Conceptos Clave
+- **Display**: Propiedad que define cómo se muestra un elemento, incluyendo `block`, `inline`, `flex`, y `grid`.
+- **Position**: Controla cómo se posicionan los elementos en la página, con valores como `static`, `relative`, `absolute`, y `fixed`.
+- **Flexbox**: Sistema unidimensional que gestiona espacios y alineación de elementos en un contenedor flexible.
+- **CSS Grid**: Sistema bidimensional que permite crear complejas estructuras de diseño con filas y columnas.
+- **Responsive Design**: Prácticas que aseguran que tu layout funcione en diferentes tamaños de pantalla, utilizando técnicas como media queries.
+
 
 ```html
 <div class="contenedor-flex">
@@ -25,6 +30,9 @@ Flexbox es una herramienta poderosa para crear diseños flexibles y responsivos.
 
 Este ejemplo muestra un contenedor flex con tres elementos que se distribuyen con espacio alrededor.
 
+Nota: la imagen tiene mas estilos aplicados pero es para que veias como seria. 
+
+![Flex](./img/Contenedor-flex.png)
 
 ## Ejemplo de Uso de Grid
 
@@ -50,6 +58,10 @@ CSS Grid permite crear complejas estructuras de diseño de página con filas y c
 }
 ``` 
 Este fragmento crea un layout básico de página con un header, contenido principal, sidebar y footer.
+
+Nota: la imagen tiene mas estilos aplicados pero es para que veias como seria. 
+
+![Grid](./img/Grid.png)
 
 ## Consejos Adicionales
 
