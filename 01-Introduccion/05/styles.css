@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #0056b3; /* Un azul similar al de las imágenes */
+}
+
+p, a, label {
+    color: #666;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Establece un contenedor con flexbox para dividir en dos columnas */
+.container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+    padding: 15px;
+    width: 48%; /* Ajusta este valor según sea necesario */
+}
+
+.Form label {
+    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    display: block;
+    margin-top: 0em;
+}
+
+/* Estilos para las entradas de texto, email y teléfono */
+.Form input[type="text"],
+.Form input[type="email"],
+.Form input[type="tel"],
+.Form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+    background-color: #F0F0F0;
+
+}
+
+/* Estilo para la entrada de teléfono y email en la misma línea */
+.Form input[type="email"],
+.Form input[type="tel"] {
+    display: inline-block;
+    width: calc(50% - 10px); /* Ajuste para el espaciado entre las entradas */
+    margin-right: 20px; /* Espaciado entre las entradas */
+}
+
+/* Ajuste para el segundo elemento para alinear correctamente al final */
+.Form input[type="tel"] {
+    margin-right: 0;
+}
+
+/* Estilo para las áreas de texto */
+.Form textarea {
+    height: 100px; /* Altura específica para el área de texto */
+}
+
+/* Estilo para los checkboxes */
+.Form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilo para el botón de enviar */
+.Form input[type="submit"] {
+    background: linear-gradient(to top right,#0e4386,#009ddb);
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    max-height: 50px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 15px 20px 15px 20px;
+    margin-left: 700px;
+    cursor: pointer;
+}
+.Form input[type="submit"]:hover {
+    background-color: #4c5bae; /* Color al pasar el ratón por encima */
+    font-size: white;
+}
+
+/* Estilo para los elementos inline como el checkbox y su label */
+.Form .inline {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Estilo para el bloque de texto del checkbox */
+.Form label[for="politica"],
+.Form label[for="comunicaciones"] {
+    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+}
+
+/* Estilo para la disposición horizontal del formulario y la sección de contacto */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contact-section {
+    width: calc(50% - 20px); /* Ajuste para la mitad del ancho menos el espacio entre */
+}
+
+.form-container {
+    width: calc(50% - 20px); /* Ajuste para la mitad del ancho menos el espacio entre */
+}
+
