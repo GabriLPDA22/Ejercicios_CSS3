@@ -1,39 +1,86 @@
-/* Estilos base para la barra de navegación */
-.navbar-container {
-    background-color: #ffffff; /* Fondo blanco para la barra de navegación */
-    padding: 20px; /* Espaciado alrededor del contenido */
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Espacio entre los elementos de la barra de navegación */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
   }
   
-  /* Estilos para la marca o logo */
+  
+  .navbar {
+  background-color: #fff;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px solid #9b9696;
+  margin-top: 10px;
+  }
+  
   .navbar-brand {
-    flex-grow: 1;
+  display: flex;
+  align-items: center;
   }
   
-  /* Estilos para los enlaces de la barra de navegación */
-  .navbar-item, .button {
-    text-decoration: none;
-    margin-right: 10px; /* Espaciado a la derecha de cada enlace */
-    color: #4A4A4A; /* Color del texto para los enlaces */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente para los enlaces */
-    font-weight: bold; /* Negrita para el texto de los enlaces */
+  
+  .navbar-logo {
+  height: 70px;
   }
   
-  /* Estilos para los botones 'Sponsor' y 'Download' */
+  .navbar-item {
+  text-decoration: none;
+  color: #4a4a4a;
+  margin-right: 10px;
+  align-items: center;
+  }
+  
+  .navbar-item:hover {
+  color: #3273dc;
+  }
+  
+  .button.is-primary {
+  background-color: #00d1b2;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .button.is-primary:hover {
+  background-color: #00b89c;
+  }
+  
+  .button.is-secondary {
+  background-color: #d60e72;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .button.button.is-secondary:hover {
+  background-color: #d60e72;
+  }
+  
+  /* Estilos para los íconos */
+  .navbar-item i,
+  .button > i {
+    margin-right: 9px; 
+  }
+  
+  /* Ajustes para los botones con íconos */
   .button {
-    padding: 5px 15px; /* Espaciado interno para los botones */
-    border-radius: 4px; /* Bordes redondeados para los botones */
-    color: white; /* Texto blanco para los botones */
-    font-size: 0.8em; /* Tamaño de la fuente reducido para los botones */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .sponsor {
-    background-color: #00d1b2; /* Color de fondo para el botón 'Sponsor' */
+  .button.is-secondary i,
+  .button.is-primary i {
+    color: white;
   }
   
-  .download {
-    background-color: #ff3860; /* Color de fondo para el botón 'Download' */
-  }
   
