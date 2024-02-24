@@ -95,6 +95,13 @@
 
 }
 
+.message.sent::after{
+    border-width: 0px 0px 10px 10px;
+    border-color: transparent transparent transparent #e1ffc7;
+        top: 0;
+        right: -10px;
+}
+
 /* Estilos para los mensajes recibidos */
 .received {
     background-color: #FFFFFF;
@@ -104,6 +111,8 @@
     display: flex;
     flex-direction: row-reverse;
 }
+
+
 
 /* Estilos para la hora del mensaje y el ícono de verificación */
 .message-time {
