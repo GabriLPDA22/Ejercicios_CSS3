@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #EBF7FF;
+    height: auto;
+}
+
+.chat-header {
+    background-color: #075E54; 
+    color: #fff; 
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.chat-header .back-icon {
+    width: 24px; 
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.user-info .user-img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+    cursor: pointer; 
+}
+
+.user-info h2 {
+    font-size: 20px; 
+    font-weight: 500; 
+    margin: 0; 
+}
+
+.user-info span {
+    font-size: 16px; 
+    color: #D0ECE7; 
+}
+
+.chat-actions {
+    display: flex; 
+}
+
+.chat-actions .icon {
+    width: 24px; 
+    margin-left: 20px; 
+    cursor: pointer;
+}
+
+
+.chat-box {
+    padding: 10px;
+    background-color: #EBF7FF; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los bocadillos de mensajes */
+.message {
+    max-width: 80%;
+    margin: 8px 0;
+    padding: 8px 10px;
+    border-radius: 7.5px;
+    position: relative;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilos para los mensajes enviados */
+.sent {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 7.5px;
+    display: flex;
+
+}
+
+/* Estilos para los mensajes recibidos */
+.received {
+    background-color: #FFFFFF;
+    align-self: flex-start;
+    margin-right: auto;
+    border-bottom-left-radius: 7.5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Estilos para la hora del mensaje y el ícono de verificación */
+.message-time {
+
+    margin-top: auto;
+    font-size: 12px; 
+    color: #999; 
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+.message-status {
+    margin-top: auto;
+    order: 2;
+    display: inline; /* Muestra el ícono de verificación en línea con la hora */
+    margin-left: 4px; /* Espacio a la izquierda del ícono de verificación */
+    width: 16px; /* Ancho del ícono de verificación */
+    height: 16px; /* Altura del ícono de verificación */
+}
+
+/* Contenedor para la hora y los íconos de verificación */
+.status-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* Ajuste para los mensajes recibidos para colocar la hora y el estado a la izquierda */
+.message.received .message-time, .message.received .message-status {
+    order: -1; /* Coloca la hora y el estado antes del contenido del mensaje */
+    margin-left: 20px;
+    margin-top: auto;
+}
+
+
+.chat-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+/* Contenedor del input y los iconos */
+.chat-footer .input-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco para el área de input e iconos */
+    border-radius: 20px; /* Bordes redondeados para el recuadro */
+    padding: 0 10px; /* Padding adecuado para los íconos y el input */
+}
+
+/* Icono de emoji, clip y cámara */
+.chat-footer .icon {
+    cursor: pointer;
+    width: 24px; /* Ajusta al tamaño de tu preferencia */
+    height: 24px;
+    margin-left: 10px;
+}
+
+/* Input para escribir el mensaje */
+.chat-footer input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 10px; /* Ajusta el padding para alinear con los íconos */
+    font-size: 16px;
+    background-color: transparent; /* Fondo transparente dentro del recuadro */
+}
+
+.chat-footer input::placeholder {
+    color: #999999; /* Color del placeholder */
+}
+
+/* Icono del micrófono */
+.chat-footer .mic-container {
+    border-radius: 50%; /* Forma circular para el botón del micrófono */
+    padding: 5px; /* Padding para el botón del micrófono */
+}
+
+/* Asegúrate de que los iconos sean clicables */
+.chat-footer .icon:hover {
+    opacity: 0.7; /* Efecto de opacidad al pasar el cursor */
+}
+
