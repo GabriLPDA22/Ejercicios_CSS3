@@ -5,10 +5,11 @@ body {
     color: #333;
     margin: 0;
     padding: 20px;
+    font-size: 15px;
 }
 
 h2, h3 {
-    color: #0056b3; /* Un azul similar al de las imágenes */
+    color: #009ddb; 
 }
 
 p, a, label {
@@ -29,18 +30,20 @@ a:hover {
 .container {
     display: flex;
     margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* Estilos para la sección de contacto */
 .contact-section {
     padding: 15px;
-    width: 48%; 
+    width: 50%; 
 }
 
 .form-container {
-    padding: 30px;
+    padding: 50px;
     width: 100%;
-    max-width: 800px; 
+    max-width: 1000px; 
     margin: 40px auto;
 }
 
@@ -74,14 +77,13 @@ a:hover {
 .form-group input[type="tel"],
 .form-group textarea {
     background-color: #f0f0f0;
-    border-radius: 50px;
-    max-height: 50px;
+    border-radius: 30px;
+    max-height: 600px;
     box-sizing: border-box;
     font-style: italic;
     color: #494949;
     font-family: "montserrat-regular",Arial,sans-serif;
-    font-size: 13px;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     border: none;
     width: 100%;
 }
@@ -95,23 +97,62 @@ a:hover {
     border: none;
     color: #FFFFFF;
     text-transform: uppercase;
-    font-size: 14px;
     max-height: 50px;
     border-radius: 50px;
     box-sizing: border-box;
-    padding: 15px 20px 15px 20px;
-    margin-left: 630px;
+    padding: 15px 20px;
+    margin-left: 850px;
     cursor: pointer;
 }
-
 
 .form input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.form-group input:not(:placeholder-shown) + label {
-    padding: 0 5px;
-    color: #0e4386;
+.form-checkbox {
+    position: relative; 
+    padding-left: 28px; 
+    cursor: pointer;
+    display: block; 
+    margin-bottom: 10px; /
+}
+
+/* Oculta la casilla de verificación predeterminada */
+.form-checkbox input[type="checkbox"] {
+    visibility: hidden; 
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos para crear una casilla de verificación personalizada */
+.form-checkbox::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 4px; 
+}
+
+/* Estilo cuando el checkbox está marcado */
+.form-checkbox input[type="checkbox"]:checked + label::before {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.form-checkbox label{
+    display: inline-block;
+    margin-left: 8px; /* Espacio después de la casilla de verificación*/
+    vertical-align: middle; /* Alinea verticalmente con la casilla de verificación */
+    color: #333; 
+    font-size: 15px; 
+    line-height: 1.2; /* Altura de línea del texto */
+    font-weight: bold;
 }
 
 /* Estilo para la disposición horizontal del formulario y la sección de contacto */
@@ -122,10 +163,10 @@ a:hover {
 }
 
 .contact-section {
-    width: calc(50% - 20px); /* Ajuste para la mitad del ancho menos el espacio entre */
+    width: calc(50% - 50px); /* Ajuste para la mitad del ancho menos el espacio entre */
 }
 
 .form-container {
-    width: calc(50% - 20px); /* Ajuste para la mitad del ancho menos el espacio entre */
+    width: calc(50% - 50px); /* Ajuste para la mitad del ancho menos el espacio entre */
 }
 
