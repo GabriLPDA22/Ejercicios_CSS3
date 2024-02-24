@@ -35,29 +35,47 @@
             <p>Email: <a href="mailto:info@estudiosabiertos.com">info@estudiosabiertos.com</a></p>
         </div>
         <div class="form-container">
-            <form class="Form">
-                <label for="nombre">Nombre y Apellidos:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-                
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <input type="checkbox" id="politica" name="politica" required>
-                <label for="politica">He leído y acepto la Política de privacidad del responsable FSV sobre el tratamiento de mis datos personales con finalidad de atender mi consulta y comunicarse comercialmente por vía electrónica.</label>
-                
-                <input type="checkbox" id="comunicaciones" name="comunicaciones">
-                <label for="comunicaciones">Deseo recibir comunicaciones sobre eventos y otra oferta formativa de FSV por vía electrónica.</label>
-                
-                <input type="submit" value="ENVIAR MENSAJE">
+            <form class="form">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellidos:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+        
+                <div class="form-group inline-inputs">
+                    <div class="form-field">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-field">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">He leído y acepto la Política de privacidad del responsable FSV sobre el tratamiento de mis datos personales con finalidad de atender mi consulta y comunicarse comercialmente por vía electrónica.</label>
+                </div>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="comunicaciones" name="comunicaciones">
+                    <label for="comunicaciones">Deseo recibir comunicaciones sobre eventos y otra oferta formativa de FSV por vía electrónica.</label>
+                </div>
+        
+                <div class="form-group">
+                    <input type="submit" value="ENVIAR MENSAJE">
+                </div>
             </form>
         </div>
     </div>

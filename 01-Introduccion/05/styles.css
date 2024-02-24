@@ -25,7 +25,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Establece un contenedor con flexbox para dividir en dos columnas */
+
 .container {
     display: flex;
     margin-bottom: 30px;
@@ -34,58 +34,63 @@ a:hover {
 /* Estilos para la sección de contacto */
 .contact-section {
     padding: 15px;
-    width: 48%; /* Ajusta este valor según sea necesario */
+    width: 48%; 
 }
 
-.Form label {
-    max-width: 100%;
+.form-container {
+    padding: 30px;
     width: 100%;
-    font-size: 14px;
-    display: block;
-    display: block;
-    margin-top: 0em;
+    max-width: 800px; 
+    margin: 40px auto;
 }
 
-/* Estilos para las entradas de texto, email y teléfono */
-.Form input[type="text"],
-.Form input[type="email"],
-.Form input[type="tel"],
-.Form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
-    background-color: #F0F0F0;
-
+.form-group, .inline-inputs {
+    margin-bottom: 20px;
 }
 
-/* Estilo para la entrada de teléfono y email en la misma línea */
-.Form input[type="email"],
-.Form input[type="tel"] {
-    display: inline-block;
-    width: calc(50% - 10px); /* Ajuste para el espaciado entre las entradas */
-    margin-right: 20px; /* Espaciado entre las entradas */
+.inline-inputs {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Ajuste para el segundo elemento para alinear correctamente al final */
-.Form input[type="tel"] {
+.form-field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-field:last-child {
     margin-right: 0;
 }
 
-/* Estilo para las áreas de texto */
-.Form textarea {
-    height: 100px; /* Altura específica para el área de texto */
+.form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-/* Estilo para los checkboxes */
-.Form input[type="checkbox"] {
-    margin-right: 5px;
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    max-height: 50px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #494949;
+    font-family: "montserrat-regular",Arial,sans-serif;
+    font-size: 13px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    width: 100%;
 }
 
-/* Estilo para el botón de enviar */
-.Form input[type="submit"] {
+.form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form input[type="submit"] {
     background: linear-gradient(to top right,#0e4386,#009ddb);
     border: none;
     color: #FFFFFF;
@@ -95,28 +100,18 @@ a:hover {
     border-radius: 50px;
     box-sizing: border-box;
     padding: 15px 20px 15px 20px;
-    margin-left: 700px;
+    margin-left: 630px;
     cursor: pointer;
 }
-.Form input[type="submit"]:hover {
-    background-color: #4c5bae; /* Color al pasar el ratón por encima */
-    font-size: white;
+
+
+.form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-/* Estilo para los elementos inline como el checkbox y su label */
-.Form .inline {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-/* Estilo para el bloque de texto del checkbox */
-.Form label[for="politica"],
-.Form label[for="comunicaciones"] {
-    max-width: 100%;
-    width: 100%;
-    font-size: 14px;
-    display: block;
+.form-group input:not(:placeholder-shown) + label {
+    padding: 0 5px;
+    color: #0e4386;
 }
 
 /* Estilo para la disposición horizontal del formulario y la sección de contacto */
