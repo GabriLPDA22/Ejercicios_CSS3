@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio 6 Flexbox</title>
+<style>
+  .flex-container {
+    display: flex; 
+  }
+
+  .flex-item {
+    flex: 1; /* Asegura que todos los elementos tengan la misma flexibilidad */
+    height: 100vh; /* 100% del viewport height */
+    margin: 5px; /* Espacio entre los elementos */
+  }
+
+  /* Colores de fondo para cada elemento */
+  .flex-item:nth-child(1) { background-color: #a2d9ce; }
+  .flex-item:nth-child(2) { background-color: #e57373; }
+  .flex-item:nth-child(3) { background-color: #ffd54f; }
+  .flex-item:nth-child(4){background-color: #a2d9ce;}
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+</div>
+</body>
+</html>
