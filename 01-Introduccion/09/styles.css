@@ -1,0 +1,89 @@
+/* estilos.css */
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+.header {
+text-align: center;
+padding: 20px;
+background-color: #fff;
+}
+
+.header h1 {
+margin-bottom: 0.5em; /* Espacio debajo del h1 */
+}
+
+.header p {
+margin-top: 0; /* Elimina el espacio arriba del párrafo */
+color: #555;
+}
+
+.container {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columnas de ancho igual */
+gap: 20px;
+padding: 20px;
+justify-items: center; /* Centra los elementos en la cuadrícula */
+}
+
+.card {
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+background: #fff;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+display: flex; /* Usamos flex para el contenido interno para un mejor control */
+flex-direction: column; /* Organiza el contenido de la tarjeta en una columna */
+}
+
+.card img {
+width: 50%;
+height: auto;
+margin-left: 190px;
+}
+
+.card h2 {
+margin: 16px;
+font-size: 1.5em; 
+text-align: center;
+}
+
+.card p {
+margin: 16px;
+color: #555;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+.container {
+    grid-template-columns: 1fr; /* En pantallas pequeñas, usamos 1 columna */
+}
+
+.card p{
+
+    justify-content: center;
+    
+}
+
+}
+
+@media (max-width: 425px) {
+    .container {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, usamos 1 columna */
+    }
+    
+    .card p{
+    
+        justify-content: center;
+    
+    }
+
+    .card img {
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+        
+}    
