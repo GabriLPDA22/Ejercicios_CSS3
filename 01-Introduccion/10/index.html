@@ -1,86 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="stylesheet" href="styles.css">
-<title>Classroom Clone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Classroom Clone</title>
 </head>
+
 <body>
 
-<div class="navbar">
-    <button class="button">
-        <span class="material-symbols-outlined">add</span>
-        Crear
-    </button>
-    <a class="link">
-        <span class="material-symbols-outlined">video_call</span>
-        <span>Meet</span>
-    </a>
-    <a class="link">
-        <span class="material-symbols-outlined">calendar_today</span>
-        <span>Google Calendar</span>
-    </a>
-    <a class="link">
-        <span class="material-symbols-outlined">folder_open</span>
-        <span>Carpeta de Drive de la clase</span>
-    </a>
-</div>
-
-<div class="container">
-    <div class="sidebar">
-        <ul>
-            <li style="color: #b80772;">Todos los temas</li>
-            <li>Retos</li>
-            <li>Labs.</li>
-            <li>Guía de la asignatura</li>
-            <li>U0. Introducción</li>
-            <li>U1. Diseño centrado...</li>
-            <li>U2. Diseño interfaz...</li>
-            <li>U3. HTML</li>
-            <li>U4. CSS</li>
-        </ul>
+    <div class="navbar">
+        <button class="button">
+            <span class="material-symbols-outlined">add</span>
+            Crear
+        </button>
+        <a class="link">
+            <span class="material-symbols-outlined">video_call</span>
+            <span>Meet</span>
+        </a>
+        <a class="link">
+            <span class="material-symbols-outlined">calendar_today</span>
+            <span>Google Calendar</span>
+        </a>
+        <a class="link">
+            <span class="material-symbols-outlined">folder_open</span>
+            <span>Carpeta de Drive de la clase</span>
+        </a>
     </div>
-
-    <div class="main-content">
-        <h2><span class="material-symbols-outlined">assignment</span>Retos</h2>
-        <div class="card">
-            <span class="material-symbols-outlined">assignment_turned_in</span>
-            <h3>Reto 1ª evaluación</h3>
-            <p>Fecha de entrega: 10 dic 2022</p>
-        </div>
     
-        <h2>
-            <span class="material-symbols-outlined">science</span>Labs.
-        </h2>
-
-        <div class="card">
-            <span class="material-symbols-outlined">science</span>
-            <h3>Laboratorio Unidad 0</h3>
-            <p>Fecha de entrega: 14 oct 2020</p>
-            
-        </div>
-        <div class="card">
-            <span class="material-symbols-outlined">science</span>
-            <h3>Laboratorio Unidad 1
-                <a href="#" class="button red material-symbols-outlined">comment</a>
-            </h3>
-            <p>Fecha de entrega: 10 nov 2020</p>
-            
-        </div>
-        <div class="card-borrador">
-            <span class="material-symbols-outlined">assignment_late</span>
-            <h3>Laboratorio Unidad 2</h3>
-            <p>Borrador</p>
-        </div>
-        <div class="card">
-            <span class="material-symbols-outlined">publish</span>
-            <h3>Laboratorio Unidad 3</h3>
-            <p>Publicado el 13 ene</p>
+    <div class="dropdown">
+        <button class="dropbtn">Todos los temas</button>
+        <div class="dropdown-content">
+            <ul>
+                <li>Retos</li>
+                <li>Labs.</li>
+                <li>Guía de la asignatura</li>
+                <li>U0. Introducción</li>
+                <li>U1. Diseño centrado...</li>
+                <li>U2. Diseño interfaz...</li>
+                <li>U3. HTML</li>
+                <li>U4. CSS</li>
+            </ul>
         </div>
     </div>
-</div>
+
+
+    <div class="navbar-responsive">
+        <button class="button-reponsive">
+            <span class="material-symbols-outlined">add</span>
+            <span class="button-text-responsive">Crear</span>
+        </button>
+        <a class="link">
+            <span class="material-symbols-outlined">video_call</span>
+            <span class="link-text"></span>
+        </a>
+        <a class="link">
+            <span class="material-symbols-outlined">calendar_today</span>
+            <span></span>
+        </a>
+        <a class="link">
+            <span class="material-symbols-outlined">folder_open</span>
+            <span></span>
+        </a>
+    </div>
+
+    
+
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li style="color: #b80772;">Todos los temas</li>
+                <li>Retos</li>
+                <li>Labs.</li>
+                <li>Guía de la asignatura</li>
+                <li>U0. Introducción</li>
+                <li>U1. Diseño centrado...</li>
+                <li>U2. Diseño interfaz...</li>
+                <li>U3. HTML</li>
+                <li>U4. CSS</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2><span class="material-symbols-outlined">assignment</span>Retos</h2>
+            <div class="card">
+                <span class="material-symbols-outlined">assignment_turned_in</span>
+                <h3>Reto 1ª evaluación</h3>
+                <p>Fecha de entrega: 10 dic 2022</p>
+            </div>
+
+            <h2>
+                <span class="material-symbols-outlined">science</span>Labs.
+            </h2>
+
+            <div class="card">
+                <span class="material-symbols-outlined">science</span>
+                <h3>Laboratorio Unidad 0</h3>
+                <p>Fecha de entrega: 14 oct 2020</p>
+
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">science</span>
+                <h3>Laboratorio Unidad 1
+                    <a href="#" class="button red material-symbols-outlined">comment</a>
+                </h3>
+                <p>Fecha de entrega: 10 nov 2020</p>
+
+            </div>
+            <div class="card-borrador">
+                <span class="material-symbols-outlined">assignment_late</span>
+                <h3>Laboratorio Unidad 2</h3>
+                <p>Borrador</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">publish</span>
+                <h3>Laboratorio Unidad 3</h3>
+                <p>Publicado el 13 ene</p>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
