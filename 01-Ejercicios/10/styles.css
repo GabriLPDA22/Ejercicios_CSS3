@@ -55,7 +55,7 @@ display: none;
     font-weight: bold;
 }
 .navbar .link span {
-    color: #b80772; /* Color de los textos de los enlaces */
+    color: #1f1d1e; /* Color de los textos de los enlaces */
     margin-left: 5px;
 }
 
@@ -200,24 +200,39 @@ font-variation-settings:
 /* Oculta el menú desplegable por defecto */ 
 .dropdown {
     display: none;
-  }
-  
+}
+
+
+@media (max-width: 1024px) {
+    .card p, .card-borrador p {
+        margin: 0;
+        color: #666;
+        margin-left: 800px;
+        text-align: right;
+        font-style: oblique;
+        margin-right: 50px;
+    }
+}
+
+
 /* Responsiveness */
 @media (max-width: 768px) {
+    
     .navbar {
         display: none;
     }
     
     .navbar-responsive {
         display: flex;
-        justify-content: space-between; /* Separa el botón de los íconos */
+        justify-content: right;
         margin-top: 20px;
         margin-bottom: 20px;
+        flex-direction: row;
     }
 
     .navbar-responsive .link {
         display: flex;
-        justify-content: center;
+       /* justify-content: center;  quitado porque el ultimo icono se corta*/
         align-items: center;
         width: 48px; /* Anchura específica para los íconos */
     }
@@ -246,8 +261,8 @@ font-variation-settings:
         cursor: pointer;
         font-size: 1.2em; /* Más grande que el texto normal */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para el botón */
-        margin: auto;
-        margin-right: 444px;
+        margin-right: 250px;
+        margin-left: 15px;
     }
 
     .container {
@@ -335,39 +350,7 @@ font-variation-settings:
 
 }
 
-/* Más estilos responsivos para pantallas aún más pequeñas */
-@media (max-width: 480px) {
-    .navbar {
-        display: none;
-    }
-    
-    .navbar-responsive {
-        display: flex;
-        justify-content: space-between; /* Separa el botón de los íconos */
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .navbar-responsive .link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 48px; /* Anchura específica para los íconos */
-    }
-
-    .navbar-responsive .link .material-symbols-outlined {
-        margin: 0; /* Elimina cualquier margen de los íconos */
-    }
-
-    .navbar-responsive .link .link-text {
-        display: none; /* Oculta el texto de los enlaces */
-    }
-
-    /* Opcional: si quieres que los íconos estén más cerca uno del otro */
-    .navbar-responsive .link:not(:first-child) {
-        margin-left: 10px; /* Ajusta la distancia entre íconos */
-    }
-
+@media (max-width: 425px) {
     .navbar-responsive .button-reponsive {
         background-color: #b80772; /* Color de fondo del botón Crear */
         color: white; /* Color del texto dentro del botón */
@@ -379,91 +362,63 @@ font-variation-settings:
         cursor: pointer;
         font-size: 1.2em; /* Más grande que el texto normal */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para el botón */
-        margin: auto;
-        margin-right: 444px;
+        margin-right: 160px;
+        margin-left: 15px;
     }
 
-    .container {
-        flex-direction: column; /* Los elementos secundarios se apilan verticalmente */
-    }
-    
-    .sidebar ul li {
-        font-size: medium; /* Reducir el tamaño de fuente para dispositivos móviles */
-    }
-    
-    .main-content h2 {
-        justify-content: left; /* Centrar los títulos en dispositivos móviles */
-    }
-    
     .card p, .card-borrador p {
-        margin-left: 0;
-        text-align: right; /* Alineación del texto a la izquierda para dispositivos móviles */
-        font-size: 0.9em; /* Reducir el tamaño de la fuente para los párrafos */
+        margin: 0;
+        color: #666;
+        margin-left: 1300px;
+        text-align: right;
+        font-style: oblique;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .navbar-responsive .button-reponsive {
+        background-color: #b80772; /* Color de fondo del botón Crear */
+        color: white; /* Color del texto dentro del botón */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.2em; /* Más grande que el texto normal */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para el botón */
+        margin-right: 130px;
+        margin-left: 15px;
+    }
+}
+
+
+@media (max-width: 325px) {
+    .navbar-responsive .button-reponsive {
+        background-color: #b80772; /* Color de fondo del botón Crear */
+        color: white; /* Color del texto dentro del botón */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.2em; /* Más grande que el texto normal */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para el botón */
+        margin-right: 85px;
+        margin-left: 15px;
     }
 
-    .dropdown {
-        position: relative;
+    .card .material-symbols-outlined {
+        color: #221f21;
+        vertical-align: middle;
+        /* margin-right: 10px; */
+        font-size: 24px;
         display: inline-block;
-        margin-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      
-      .dropbtn {
-        background-color: #fff;
-        color: #333;
-        padding: 16px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        cursor: pointer;
-        width: 100%; /* Asegúrate de que el botón se expanda al ancho completo */
-
-        
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-      
-      /* Mostrar el menú desplegable al hacer hover */
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-      /* Estilo para cuando se hace hover en los items del menú desplegable */
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-    .sidebar {
-        display: none; /* Oculta la barra lateral */
     }
     
-    .button-text, .link-text {
-        display: none; /* Oculta los textos de los botones y enlaces */
-    }
-
-    /* Ajusta el botón para que ocupe el ancho completo */
-    .dropbtn {
-        width: 100%;
-        
-    }
-
-    /* Estilos para que el dropdown se muestre correctamente */
-    .dropdown {
-        display: block;
-    }
-
 }
