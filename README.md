@@ -44,7 +44,7 @@ Si este repositorio te ha sido útil, considera darle una estrella en GitHub y c
 
 ## Licencia :balance_scale:
 
-Este proyecto está bajo la Licencia MIT. Para más detalles, vea el archivo LICENSE.md en este repositorio.
+Este proyecto está bajo la Licencia MIT. Para más detalles, vea el archivo [LICENSE.md](LICENSE.md) en este repositorio.
 
 ---
 
